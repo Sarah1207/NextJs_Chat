@@ -26,7 +26,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-const Conversations = ({ conversations }) => {
+const ConversationsPage = ({ conversations }) => {
   const element =
     conversations.map(conversation => {
       return (
@@ -51,4 +51,4 @@ const Conversations = ({ conversations }) => {
   )
 }
 
-export default Conversations
+export default ConversationsPage
