@@ -63,16 +63,4 @@ describe("App", () => {
     })
   })
 
-  describe("The Conversations Page /pages/conversations/[senderId].tsx", () => {
-    it("should render correctly the page without crashing", () => {
-      const conversations = [
-        { id: 12 },
-        { name: 'name' }
-      ]
-      render(<ConversationsPage conversations={conversations} />)
-      expect(screen.getByTestId('conversationPage')).toBeInTheDocument()
-      expect(screen.getByTestId('conversationPage')).toHaveClass("mainContainer")
-      expect(screen.getByRole('heading')).toBeInTheDocument()
-    })
-  })
 })
