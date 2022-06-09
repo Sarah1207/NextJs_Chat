@@ -75,14 +75,4 @@ describe("App", () => {
       expect(screen.getByRole('heading')).toBeInTheDocument()
     })
   })
-
-  describe("The Messages Page /pages/messages/[conversationId].tsx", () => {
-    it("should render correctly the page without crashing", () => {
-      render(<MessagesPage />)
-      expect(screen.getByTestId('pageMessages')).toBeInTheDocument()
-      expect(screen.getByTestId('pageMessages')).toHaveClass("mainContainer")
-      expect(screen.getByRole('heading')).toBeInTheDocument()
-    })
-  })
-
 })

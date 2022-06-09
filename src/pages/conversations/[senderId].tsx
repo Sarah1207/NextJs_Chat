@@ -26,18 +26,19 @@ export const getStaticProps: GetStaticProps = async (context) => {
   }
 }
 
-const ConversationsPage = ({ conversations }) => {
+const Conversations = ({ conversations }) => {
   const element =
     conversations.map(conversation => {
       return (
-        <div key={conversation.id}>
+        <div key={conversation.id} >
           <ConversationsCard
             conversationId={conversation.id}
             recipientId={conversation.recipientId}
             recipientNickname={conversation.recipientNickname}
             senderId={conversation.senderId}
             senderNickname={conversation.senderNickname} />
-        </div>)
+        </div >
+      )
     })
 
   return (
@@ -50,4 +51,4 @@ const ConversationsPage = ({ conversations }) => {
   )
 }
 
-export default ConversationsPage
+export default Conversations

@@ -13,7 +13,7 @@ const MessagesCard = ({ messageId, conversationId, authorId, timestamp, body }: 
           <span><b>Date: {date}</b> </span>
           <br />
           <span>{body}</span>
-          <Link href={`/message/${messageId}`}>
+          <Link href={`/message/${messageId.toString()}`}>
             <a className='linksMessage links'>See details</a>
           </Link>
         </div>

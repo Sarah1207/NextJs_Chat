@@ -3,7 +3,7 @@ import axios from 'axios'
 import { useEffect, useState } from "react"
 import MessagesCard from "../../components/MessagesCard/MessagesCard"
 
-const MessagesPage = () => {
+const Messages = () => {
   const router = useRouter()
   const { query: { conversationId } } = router
   const [messages, getMessages] = useState([])
@@ -27,7 +27,7 @@ const MessagesPage = () => {
   const element =
     messages.map((message) => {
       return (
-        <div key={message.id}>
+        <div key={message.messageId}>
           <MessagesCard
             messageId={message.id}
             conversationId={message.conversationId}
@@ -37,7 +37,6 @@ const MessagesPage = () => {
         </div>
       )
     })
-
 
   return (
     <div className="mainContainer" data-testid='pageMessages'>
@@ -49,4 +48,4 @@ const MessagesPage = () => {
   )
 }
 
-export default MessagesPage
+export default Messages

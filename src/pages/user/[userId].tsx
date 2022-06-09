@@ -32,8 +32,11 @@ const UserIdPage = ({ user }) => {
   return (
     <div className="mainContainer" data-testid='oneUser'>
       <main>
-        <h1> Detailed information about {user.nickname}</h1>
-        <UserIdCard userId={user.id} nickname={user.nickname} token={user.token} />
+        <h1> Detailed information about {`${user.nickname}`}</h1>
+        <UserIdCard
+          userId={user.id}
+          nickname={user.nickname}
+          token={user.token} />
       </main>
     </div>
   )

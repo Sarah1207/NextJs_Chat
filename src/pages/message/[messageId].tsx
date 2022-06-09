@@ -41,7 +41,7 @@ const MessagePage = () => {
   return (
     <div className="mainContainer">
       <main>
-        <h1>Detailed Message n°{`${messageId}`}</h1>
+        <h1>Detailed Message n° {`${messageId}`}</h1>
         <div>{element}</div>
       </main>
     </div>

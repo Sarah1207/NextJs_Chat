@@ -32,7 +32,7 @@ Commands :
 
 
 # About the project
-1 / I didn't know some next features so I had to study them
+1 / I didn't know some next features so I had to study them (cf. next router)
 2 / I had difficulties for the calls to the API. I've started with the users and I should have change it in order to start with the conversations
 
 

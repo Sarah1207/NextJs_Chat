@@ -7,7 +7,7 @@ const ConversationsCard = ({ conversationId, senderNickname, senderId, recipient
       <p><b>Conversation n°{conversationId}</b></p>
       <p><b>Send by: </b>{senderNickname} </p>
       <p><b>To: </b>{recipientNickname}</p>
-      <Link href={`/messages/${conversationId}`}>
+      <Link href={`/messages/${conversationId.toString()}`}>
         <a className='links'>See messages from conversation n°{`${conversationId}`} </a>
       </Link>
     </div >

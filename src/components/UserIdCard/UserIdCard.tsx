@@ -7,7 +7,7 @@ const UserIdCard = ({ nickname, userId, token }: User) => {
       <p><b>Pseudo: </b>{nickname}</p>
       <p><b>Id: </b>{userId}</p>
       <p><b>Token: </b>{token}</p>
-      <Link href={`/conversations/${userId}`}>
+      <Link href={`/conversations/${userId.toString()}`}>
         <a className='links'>See all {nickname}&lsquo;s conversations</a>
       </Link>
     </div>

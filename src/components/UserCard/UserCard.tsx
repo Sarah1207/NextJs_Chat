@@ -11,7 +11,7 @@ const UserCard = ({ userId, nickname, token }: User) => {
         </div>
         <h3 className='userName'>{nickname}</h3>
       </div>
-      <Link href={`/user/${userId}`}>
+      <Link href={`/user/${userId.toString()}`}>
         <a className='links'>
           More information about {nickname}
         </a>
